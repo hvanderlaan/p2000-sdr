@@ -87,7 +87,7 @@ def main():
                     capcodes = p2000[43:].split('|ALN|')[0].split()
                     date = time.strftime('%Y/%m/%d %H:%M:%S')
 
-                    print(f'\n\033[0mMelding van: {date}')
+                    print(f'\n\033[0mMelding van: {date}\a')
                     print(f'{coloriz(message)}{message}\033[0m')
 
                     for capcode in capcodes:
