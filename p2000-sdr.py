@@ -9,9 +9,10 @@
 #                                                                             #
 # Author : Harald van der Laan                                                #
 # Date   : 2020-07-16                                                         #
-# Version: v1.0.1                                                             #
+# Version: v1.0.2                                                             #
 # =========================================================================== #
 # Changelog:                                                                  #
+# - v1.0.2: Small display changes                       (Harald van der Laan) #
 # - v1.0.1: Fixed minor typos                           (Harald van der Laan) #
 # - v1.0.0: Initial version                             (Harald van der Laan) #
 # =========================================================================== #
@@ -95,7 +96,7 @@ def main():
                         except KeyError:
                             capdesc = 'Onbekende of persoonlijke capcode'
 
-                        print(f'{coloriz(capcode)}{capcode} - {capdesc}')
+                        print(f'{coloriz(capcode)}[{capcode}]: {capdesc}')
 
     except KeyboardInterrupt:
         os.kill(sdr.pid, 9)
