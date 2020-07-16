@@ -9,9 +9,10 @@
 #                                                                             #
 # Author : Harald van der Laan                                                #
 # Date   : 2020-07-16                                                         #
-# Version: v1.0.0                                                             #
+# Version: v1.0.1                                                             #
 # =========================================================================== #
 # Changelog:                                                                  #
+# - v1.0.1: Fixed minor typos                           (Harald van der Laan) #
 # - v1.0.0: Initial version                             (Harald van der Laan) #
 # =========================================================================== #
 # Copyright © 2020 Harald van der Laan                                        #
@@ -92,7 +93,7 @@ def main():
                         try:
                             capdesc = caplist[capcode]
                         except KeyError:
-                            capdesc = 'Onbekendie of persoonlijke capcode'
+                            capdesc = 'Onbekende of persoonlijke capcode'
 
                         print(f'{coloriz(capcode)}{capcode} - {capdesc}')
 
