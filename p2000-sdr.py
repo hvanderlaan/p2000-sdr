@@ -68,7 +68,8 @@ def coloriz(capcode):
 def main():
     """ Main python function """
     command = 'rtl_fm -f 169.65M -M fm -s 22050 -p 45 -g 30 | multimon-ng -a FLEX -t raw -'
-    sdr = Popen(command, stdout=PIPE, stderr=PIPE, shell=True)
+    sdr = Popen(command, stdout=PIPE, stderr=open(
+          'error.log', 'a'), shell=True)
     caplist = {}
 
     with open('capcodes.dict', 'r') as fdh:
